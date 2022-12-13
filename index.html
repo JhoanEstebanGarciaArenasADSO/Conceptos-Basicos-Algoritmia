@@ -1,108 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conceptuales de lógica proposicional</title>
+    <title>Conceptos Basicos Algoritmia</title>
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
 </head>
-<body>
-    <h1>Ejercicios 1y 2</h1>
-    <h2>Evidencia de conocimiento: GA3-220501093-AA1-EV01 bases conceptuales de lógica proposicional
-        Teniendo en cuenta los conceptos desarrollados durante el componente formativo, construir un documento donde
-        se dé solución a los siguientes problemas de lógica proposicional registrando cada uno de los pasos elaborados
-        para llegar a la solución:
-        <BR></BR>
-        (2 * 5) < 8 OR ((4 * 6) > (2 * 5) )
-        (4+ 5) < 3 AND ( ( 5 * 5 ) + (4 + 25 < 3) )
-        &nbsp
-        &nbsp
-        Construir la tabla de verdad para las siguientes expresiones:
-        
-        <br>
-        ● ( P ∧ Q)
-        <br>
-        ● ( P ∨ Q) 
-    </h2>
-        <h1>Ejercicio 1</h1>
-    </p>
-    (2 * 5) < 8 OR ((4 * 6)> (2 * 5) ) <br>
-    (10) < 8 OR ((24)> (10) <br>
-    10 < 8 <b>(Falso)</b> OR (24) > (10) <b>(Verdadero)</b> <br>
-    
-    </p>
-    <p>
-    (4+ 5) < 3 AND ( ( 5 * 5 ) + (4 + 25 < 3) ) <br>
-    9 < 3 <b>(Falso)</b> AND ((25) + (29 < 3)) <b>(Falso)</b> <br>
-</p>
 
-    <h1>Tabla de verdades (Ejercicio 2)</h1>
-    <h1>Y</h1>
-    <table >
-        <tr>
-            <th>P</th>
-            <th>∧</th>
-            <th>Q</th>
-            <th>P ∧ Q</th>
-        </tr>
-        <tr>
-            <td>V</td>
-            <td>Y</td>
-            <td>V</td>
-            <td>V</td>
-        </tr>
-        <tr>
-            <td>V</td>
-            <td>Y</td>
-            <td>F</td>
-            <td>F</td>
-        </tr>
-        <tr>
-            <td>F</td>
-            <td>Y</td>
-            <td>V</td>
-            <td>F</td>
-        </tr>
-        <tr>
-            <td>F</td>
-            <td>Y</td>
-            <td>F</td>
-            <td>F</td>
-        </tr>
-    </table>
-<h1>O</h1>
-    <table>
-        <tr>
-            <th>P</th>
-            <th>∨</th>
-            <th>Q</th>
-            <th>P V Q</th>
-        </tr>
-        <tr>
-            <td>V</td>
-            <td>O</td>
-            <td>V</td>
-            <td>V</td>
-        </tr>
-        <tr>
-            <td>V</td>
-            <td>O</td>
-            <td>F</td>
-            <td>V</td>
-        </tr>
-        <tr>
-            <td>F</td>
-            <td>O</td>
-            <td>V</td>
-            <td>V</td>
-        </tr>
-        <tr>
-            <td>F</td>
-            <td>O</td>
-            <td>F</td>
-            <td>F</td>
-        </tr>
-    </table>
+<body>
+    <h1 class="centrar">Ejercicio 3</h1>
+    <h1>Conversion.</h1>
+    <form>
+        <div id="selection">
+            <label>
+                Pesos Colombianos
+            <input type="radio" name="conver" value="cop">
+            </label>
+            <label>
+                Dolar US
+            <input type="radio" name="conver" value="usd">
+            </label>
+        </div>
+        <input id="val" type="text" name="valor">
+        <input  type="submit" name="Enviar">
+    </form>
+    <span></span>
 </body>
+
 </html>
