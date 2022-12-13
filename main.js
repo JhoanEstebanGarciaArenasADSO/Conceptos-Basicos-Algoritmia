@@ -7,12 +7,11 @@ addEventListener("DOMContentLoaded", (e) => {
     
     select.addEventListener("click", (e) => {
         let input = document.querySelector("#val")
-        console.log(e.target)
-        if (e.target.value == "cop") {
-            input.placeholder = "Ingrese Pesos Colombianos"
+        if (e.target.value == "fahr") {
+            input.placeholder = "Ingrese grados Fahrenheit"
         }
-        else if (e.target.value == "usd") {
-            input.placeholder = "Ingrese US Dolares"
+        else if (e.target.value == "cen") {
+            input.placeholder = "Ingrese Grados Centigrados"
         }
     })
 
@@ -20,18 +19,14 @@ addEventListener("DOMContentLoaded", (e) => {
         e.preventDefault();
         let dataInput = Object.fromEntries(new FormData(e.target));
 
-        if (dataInput.conver == "cop") {
-
-            let confi = Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' })
-            let paD = Number(dataInput.valor * 0.00021)
-            conver.innerHTML = `${confi.format(paD)}`
+        if (dataInput.conver == "fahr") {
+            let faC = Number(dataInput.valor - 32) * 5/9
+            conver.innerHTML = faC + ' grados Centigrados'
         }
 
-        else if (dataInput.conver == "usd") {
-
-            confi = Intl.NumberFormat('es-CO', { style: 'currency', currency: 'COP' })
-            let daP = Number(dataInput.valor * 4824.50)
-            conver.innerHTML = `${confi.format(daP)}`
+        else if (dataInput.conver == "cen") {
+            let caF = Number(dataInput.valor * 9/5) + 32 
+            conver.innerHTML = caF + ' grados Fahrenheit'
 
         }
     })
